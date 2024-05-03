@@ -9,7 +9,7 @@ function consultaEndereco() {
     let url = `https://viacep.com.br/ws/${cep}/json/`;
 
     fetch(url).then(function(response){
-        response.json().then(mostrarEndereco)
+        response.json().then(mostrarEndereco())
         });
 
     function mostrarEndereco(dados) {
@@ -32,7 +32,7 @@ function consultaClima() {
     let url = `http://api.openweathermap.org/data/2.5/weather?q=${clima}&appid=300e6d140856655683c1d887d82ebe2a&anits=metric&lang=pt`;
 
     fetch(url).then(function(response){
-        response.json().then(mostrarClima)
+        response.json().then(mostrarClima())
     });
 
     function mostrarClima(dados) {
