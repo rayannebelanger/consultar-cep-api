@@ -29,7 +29,7 @@ function consultaEndereco() {
 function consultaClima() {
     let clima = document.querySelector('#clima').value;
     // http://api.openweathermap.org/data/2.5/weather?q=Recife&appid=300e6d140856655683c1d887d82ebe2a&units=metric&lang=pt
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${clima}&appid=300e6d140856655683c1d887d82ebe2a&anits=metric&lang=pt`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${clima}&appid=300e6d140856655683c1d887d82ebe2a&anits=metric&lang=pt`;
 
     fetch(url).then(function(response){
         response.json().then(mostrarClima)
