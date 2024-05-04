@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endereço</title>
+    <link rel="stylesheet" type="text/css" href="arquivo.css">
     <script type="text/javascript" src="index.js">
 
     </script>
 </head>
 <body>
-    <h1>Consulta de endereço</h1>
-    <label>Insira seu CEP:</label>
-    <input type="number" id="cep"/>
-    <button onclick="consultaEndereco()">Consultar</button>
-    <div id="resultado">
-        <p>Endereço encontrado:</p>
-    </div>
+    <div class="principal">
+        <h1>Consulta de endereço</h1>
+        <label>Insira seu CEP:</label>
+        <input type="number" id="cep"/>
+        <button onclick="consultaEndereco()">Consultar</button>
+        <div id="resultado" class="message-box">
+            <p>Endereço encontrado:</p>
+        </div>
+        
+        <hr>
     
-    <hr>
-
-    <h1>Consulta de clima</h1>
-    <label>Insira sua cidade:</label>
-    <input type="text" id="clima">
-    <button onclick="consultaClima()">Consultar</button>
-    <div id="resultadoclima">
-        <p>Clima encontrado:</p>
+        <h1>Consulta de clima</h1>
+        <label>Insira sua cidade:</label>
+        <input type="text" id="clima">
+        <button onclick="consultaClima()">Consultar</button>
+        <div id="resultadoclima" class="box-msg">
+            <p>Clima encontrado:</p>
+        </div>
     </div>
-
-
 </body>
 </html>

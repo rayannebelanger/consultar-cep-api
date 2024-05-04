@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f0f8ff;
     font-family: Arial, sans-serif;
 }
 .principal {
@@ -12,7 +12,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .box-msg {
-    background-color: #f0f0f0; /* Light gray background for message box */
+    background-color: #f0f0f0;
     padding: 10px;
     margin-top: 20px;
     border-radius: 5px;
